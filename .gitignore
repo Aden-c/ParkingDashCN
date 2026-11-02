@@ -1,0 +1,25 @@
+# ---- 原版游戏资源（版权属于 PlayFirst / Kef Sensei，不可上传）----
+backup/
+original/
+en.json
+screens_en/
+翻译表*.xlsx
+翻译表_快照.json
+logo/*
+!logo/inpaint.py
+
+# ---- 字体文件（授权见 README；构建时自行下载）----
+fontsrc/
+
+# ---- 生成物 ----
+build/
+dist/
+preview/
+preview_*.png
+try_*.png
+__pycache__/
+*.pyc
+
+# ---- 中间过程 / 已被取代 ----
+batches/
+charset_old.txt

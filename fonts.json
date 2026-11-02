@@ -1,0 +1,75 @@
+{
+  "_说明": "路径相对于本文件；original 为原版字体（用于对齐字号和保留英文）；install_as 相对于 game_assets。zero_space 需配合翻译工具在中文字间插空格。 handfont 未被引用，不汉化。",
+  "game_assets": "../assets",
+  "charset": "charset.txt",
+  "fallback": [
+    "%LOCALAPPDATA%/Microsoft/Windows/Fonts/HarmonyOS_Sans_SC_Regular.ttf"
+  ],
+  "preview_text": "美女停车场 开始游戏 继续 返回 第 3 关 PLAY 12345",
+  "fonts": {
+    "doncomic": {
+      "source": "fontsrc/站酷快乐体 开源版.ttf",
+      "original": "original/doncomic.mvec",
+      "install_as": [
+        "fonts/doncomic.mvec"
+      ],
+      "keep_latin": false,
+      "cjk_scale": 1.0,
+      "zero_space": true,
+      "_用途": "剧情漫画（scripts/comics.lua）",
+      "unit_scale": 0.5,
+      "_unit_scale": "原版单位很大（H 高 24193），全角字宽约 34000 超出 i16，缩小一半；引擎按 H 高归一字号"
+    },
+    "rollout": {
+      "source": "%LOCALAPPDATA%/Microsoft/Windows/Fonts/JinzisheZhenhao-Bold.otf",
+      "original": "original/rollout.mvec",
+      "install_as": [
+        "fonts/rollout.mvec"
+      ],
+      "keep_latin": true,
+      "cjk_scale": 1.0,
+      "zero_space": true,
+      "_用途": "界面主字体（scripts/style.lua 的 standardFont）",
+      "alias": {
+        "\u0001": "击",
+        "\u0002": "别",
+        "\u0003": "外",
+        "\u0004": "太",
+        "\u0005": "客",
+        "\u0006": "小",
+        "\u0007": "得",
+        "\b": "快",
+        "\u000e": "洗",
+        "\u000f": "点",
+        "\u0010": "着",
+        "\u0011": "等",
+        "\u0012": "让",
+        "\u0013": "费",
+        "\u0014": "车",
+        "\u0015": "连",
+        "\u0016": "顾",
+        "\u0017": "额",
+        "\u0018": "高",
+        "\u0019": "！",
+        "\u001b": "急",
+        "\u001c": "最",
+        "\u001d": "，"
+      },
+      "_alias": "由 bytepath.py 自动生成，不要手改：ASCII 控制字符 → 单字节文字（飘字、警告横幅）用到的汉字"
+    },
+    "comdigital": {
+      "source": "%LOCALAPPDATA%/Microsoft/Windows/Fonts/JinzisheZhenhao-Bold.otf",
+      "original": "original/comdigital.mvec",
+      "install_as": [
+        "fonts/comdigital.mvec"
+      ],
+      "keep_latin": true,
+      "cjk_scale": 0.92,
+      "zero_space": false,
+      "unit_scale": 0.5,
+      "keep_bbox": true,
+      "chars": "达成目标专家级分数：！，",
+      "_用途": "达成目标/专家级分数弹窗（exe 引用，<outline> 标记）。只补弹窗用到的字；keep_bbox 保证原版字符大小不变"
+    }
+  }
+}

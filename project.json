@@ -1,0 +1,144 @@
+{
+  "_说明": "汉化工具的游戏相关配置。路径相对于本文件；assets 内的文件路径相对于 game_assets。原版文件按 assets 内的相对路径备份在 backup/ 下。",
+  "title_cn": "美女停车场",
+  "title_en": "Parking Dash",
+  "game_exe": "Parking Dash.exe",
+  "game_assets": "../assets",
+  "backup": "backup",
+  "strings": "strings.xml",
+  "credits": "credits/credits.txt",
+  "raw_keys": [
+    "windowtitle",
+    "playground"
+  ],
+  "_raw_keys": "不经过 mvec 字体渲染的条目（窗口标题等），写回时不插折行空格",
+  "skip_keys": [
+    "tracking_decor_t0v1",
+    "tracking_decor_t0v2",
+    "tracking_decor_t1v1",
+    "tracking_decor_t1v2",
+    "tracking_decor_t3v1",
+    "tracking_decor_t3v2",
+    "tracking_decor_t6v1",
+    "tracking_decor_t6v2",
+    "tracking_decor_t7v1",
+    "tracking_decor_t7v2",
+    "tracking_decor_t8v1",
+    "tracking_decor_t8v2",
+    "popup_extra_tip_value",
+    "popup_positive_score",
+    "popup_negative_score",
+    "radio_1",
+    "radio_2",
+    "radio_3",
+    "radio_4",
+    "radio_5",
+    "radio_6",
+    "radio_7",
+    "radio_8",
+    "radio_9",
+    "radio_10",
+    "radio_101",
+    "radio_genre_101",
+    "help_page_number_1",
+    "help_page_number_2",
+    "help_page_number_3",
+    "help_page_number_4",
+    "help_page_number_5"
+  ],
+  "patch_name": "ParkingDashCN",
+  "patch_files": [
+    "strings.xml",
+    "credits/credits.txt",
+    "fonts/rollout.mvec",
+    "fonts/doncomic.mvec",
+    "fonts/comdigital.mvec",
+    "scripts/comics.lua",
+    "backgrounds/welcomem.jpg"
+  ],
+  "patch_renames": [],
+  "_skip_keys": "不需要翻译的条目（统计用 tracking_*、电台呼号、页码、纯数字占位等），校对表里不列出",
+  "proofread_categories": [
+    [
+      "界面",
+      null
+    ],
+    [
+      "帮助页",
+      [
+        "help"
+      ]
+    ],
+    [
+      "教程",
+      [
+        "tutorial",
+        "skip_tutorial",
+        "skiptutorial"
+      ]
+    ],
+    [
+      "剧情漫画",
+      [
+        "comic_"
+      ]
+    ],
+    [
+      "关卡开场",
+      [
+        "intro_level",
+        "descrlvl"
+      ]
+    ],
+    [
+      "过关台词",
+      [
+        "wintext",
+        "endless_end_text",
+        "goal_text",
+        "warning_text"
+      ]
+    ],
+    [
+      "升级道具",
+      [
+        "upgrades",
+        "Fast",
+        "Cookies",
+        "Car Wash",
+        "Drink",
+        "Parking s",
+        "Nitro",
+        "Dog Cookies"
+      ]
+    ],
+    [
+      "装饰升级",
+      [
+        "decor"
+      ]
+    ],
+    [
+      "电台",
+      [
+        "radio",
+        "legend"
+      ]
+    ],
+    [
+      "奖牌",
+      [
+        "medal"
+      ]
+    ]
+  ],
+  "ofl_text": "fontsrc/OFL.txt",
+  "_ofl_text": "任一 OFL 字体包里的协议全文，打包时附到「字体授权」",
+  "patch_exe": true,
+  "_patch_exe": "exe 硬编码英文由 exe_patch.py 原位替换；打包时写进 cn_patch/install.ps1，在玩家电脑上核对原字节后原位修改（不附带整个 exe）",
+  "byte_keys": [
+    "warning_text",
+    "popup_extra_tip"
+  ],
+  "_byte_keys": "exe 直接画、按单字节处理的文字（警告横幅、飘字）。写正常中文，apply 时由 bytepath.py 换成借用的控制字符码位"
+}
